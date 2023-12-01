@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:color-mix(in srgb, rgb(216, 204, 31) 25%,rgb(255, 0, 0) 25%);
+            font-family:gilroy;
+            align-items: center;
+            justify-content: center;
+        }
+        #div1{
+            height:150px;
+            width:150px;
+            rotate: 45deg;
+            background-color: red;
+            animation-name:anime;
+            animation-duration: 5s;
+            position: absolute;
+            display: flex;
+        }
+        @keyframes anime{
+            0%{
+                left:0;
+                background-color: red;
+                top:0%;
+                rotate:360deg;
+            }
+            90%{
+                left:75%;
+                background-color: purple;
+                top:0%;
+            }
+            100%{
+                left:80;
+                background-color: blue;
+                top:70%;    
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">
+
+    </div>
+</body>
+</html>
